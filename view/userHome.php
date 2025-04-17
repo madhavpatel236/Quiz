@@ -99,7 +99,6 @@ if ($_SESSION['isLogin'] != true) {
                     }
                 } else{
                     $('#rankTable').hide();
-
                 }
             }
         })

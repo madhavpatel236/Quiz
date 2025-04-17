@@ -48,14 +48,12 @@ class adminController
         $numberOfPlayers = $_POST['numberOfPlayers'];
         $points = $_POST['points'];
         $id = $_POST['id'];
-        // echo json_encode('hiihii');
         return $this->userModelObject->updateRule($numberOfPlayers, $points, $id);
     }
 
     public function getLeaderbord()
     {
         $data = $this->userModelObject->userRankTable();
-        echo json_encode($data);
     }
 }
 
